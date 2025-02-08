@@ -16,6 +16,47 @@ body {
     src: url(Fonts/TTLakes-Bold.woff);
 }
 
+.header-container__icon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+
+.header-container__menu-icon {
+    background-image: url(pics/menu-icon.svg);
+}
+
+.header-container__logo {
+    background-image: url(pics/logo.svg);
+}
+
+.header-container__call-icon {
+    background-image: url(pics/call.svg)
+}
+    
+.header-container__chat-icon {
+    background-image: url(pics/chat.svg)
+}
+
+.header-container__profile-icon {
+    background-image: url(pics/profile.svg)
+}
+
+.header-container__settings-icon {
+    background-image: url(pics/settings-icon.svg)
+}
+
+.header-container__search-icon {
+    background-image: url(pics/search-icon.svg)
+}
+
+.article-container__button {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-left: 25px;
+}
+
 
 .stick {
     border-right: 4px solid #41F6D7;
@@ -66,8 +107,7 @@ h1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: scroll;
-    margin-left: 16px;
+    overflow: auto;
 }
 
 li {
@@ -79,11 +119,18 @@ ul li:first-child {
     border: 2px solid #B8FFEC;
     background-color: white;
     border-radius: 5px;
+    margin-left: 16px;
+}
+
+ul li:first-child button {
+    background-color: white;
 }
 
 
 .article-container__main-info {
     margin: 13px 25px;
+    overflow: hidden;
+    max-height: 145px;
 }
 
 button {
@@ -98,9 +145,6 @@ button:hover {
     color: rgb(105, 105, 105);
 }
 
-.article-container__readmore-img {
-    margin-left: 25px;
-}
 
 .article-container__kartinka { 
     margin-top: 16px;
@@ -158,17 +202,19 @@ button:hover {
         margin-left: 20px;
     }
 
-    .second-par {
-        display: inline;
-    }
-
-    .more-text {
-        display: none;
+    .article-container__main-info {
+        max-width: 90%;
+        max-height: 190px;
     }
 
     .list {
+        margin-left: 0;
+    }
+
+    .list li:first-child {
         margin-left: 24px;
     }
+
 
 }
 
@@ -182,10 +228,6 @@ button:hover {
         width: 90%;
     }
 
-    .more-text {
-        display: inline;
-    }
-
     h1 {
         display: inline-block;
     }
@@ -193,29 +235,30 @@ button:hover {
     .fake-header {
         display: flex;
         align-items: center;
-    }
-
-    h1:first-child {
-        margin-right: auto;
-    }
-    
-    .fake-header__items {
-        align-items: center;
-        padding: 5px;
-    }
-
-    img.fake-header__items {
         margin-right: 10px;
     }
 
-    .real-h1 {
-        display: none;
+
+    .fake-header__button {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        gap: 10px;
+    }
+
+    .list li:first-child {
+        margin: 0;
     }
 
     .list {
         overflow: hidden;
         flex-wrap: wrap;
         margin-left: 32px;
+    }
+
+    .fullscreen-header {
+        display: flex;
+        justify-content: space-between;
     }
 
 

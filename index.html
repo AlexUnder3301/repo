@@ -8,44 +8,51 @@
 </head>
 <body>
     <header class="header-container">
-            <img src="pics/menu-icon.svg" alt="" class="header-container__menu-icon header-container__icon">
+            <button class="header-container__menu-icon header-container__icon"></button>
             <div class="header-container__divider divider-first header-container__icon"></div>
-            <img src="pics/logo.svg" alt="" class="header-container__icon header-container__logo">
-            <img src="pics/call.svg" class="header-container__icon header-container__call-icon" alt="">
-            <img src="pics/chat.svg" class="header-container__icon header-container__chat-icon" alt="">
-            <img src="pics/profile.svg" class="header-container__icon header-container__profile-icon" alt="">
+            <button  class="header-container__icon header-container__logo"></button>
+            <button class="header-container__icon header-container__call-icon"></button>
+            <button class="header-container__icon header-container__chat-icon"></button>
+            <button class="header-container__icon header-container__profile-icon"></button>
             <div class="header-container__divider header-container__icon"></div>
-            <img src="pics/settings-icon.svg" alt="" class="header-container__icon header-container__settings-icon">
-            <img src="pics/search-icon.svg" alt="" class="header-container__icon header-container__search-icon">
+            <button class="header-container__icon header-container__settings-icon"></button>
+            <button class="header-container__icon header-container__search-icon"></button>
     </header>
     <main>
         <div class="stick"></div>
-        <h1 class="real-h1">Услуги и сервисы </h1>
-        <div class="fake-header">
+        <div class="fullscreen-header">
             <h1>Услуги и сервисы </h1>
-            <div class="fake-header__items">Оставить заявку</div>
-            <img src="pics/settings-icon.svg" class="fake-header__items">
-            <div class="fake-header__items">Статус ремонта</div>
-            <img src="pics/search-icon.svg" alt="" class="fake-header__items">
+            <div class="fake-header">
+                <button class="fake-header__button">
+                    <div class="fake-header__items">Оставить заявку</div>
+                    <img src="pics/settings-icon.svg" class="fake-header__items fake-header__settings-icon"></img>
+                </button>
+                <button class="fake-header__button">
+                    <div class="fake-header__items">Статус ремонта</div>
+                    <img src="pics/search-icon.svg" class="fake-header__items fake-header__search-icon"></img>
+                </button>
+            </div>
         </div>
         <nav>
             <ul class="list">
-                <li>Ремонтируемые устройства</li>
-                <li>Ремонтируемые бренды</li>
-                <li>Цены на услуги</li>
-                <li>Адреса сервисных центров</li>
-                <li>Специальные цены</li>
-                <li>Отзывы</li>
+                <li><button>Ремонтируемые устройства</button></li>
+                <li><button>Ремонтируемые бренды</button></li>
+                <li><button>Цены на услуги</button></li></button>
+                <li><button>Адреса сервисных центров</button></li>
+                <li><button>Специальные цены</button></li>
+                <li><button>Отзывы</button></li>
             </ul>
         </nav>
         <div class="article-container">
             <div class="article-container__readmore">
                 <article class="article-container__main-info">
                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="second-par">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="more-text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </article>
-                <img src="pics/readmore.svg" class="article-container__readmore-img" alt="">
-                <button>Читать далее</button>
+                <button class="article-container__button">
+                    <img src="pics/readmore.svg" class="article-container__readmore-img" ></img>
+                    <div>Читать далее</div>
+                </button>
             </div>
             <img src="pics/kartinka.png" class="article-container__kartinka" alt="Логотип">
         </div>
