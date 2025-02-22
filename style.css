@@ -86,11 +86,27 @@ body {
 
 }
 
-.article-container__button {
+.readmore-button {
     display: flex;
     align-items: center;
     column-gap: 5px;
     margin-left: 25px;
+}
+
+.readmore::after {
+    content: 'Читать далее';
+}
+
+.all-brands__readmore::after {
+    content: 'Показать все';
+}
+
+.readmore--bigboy::after {
+    content: 'Скрыть';
+} 
+
+.readmore-img--bigboy {
+    transform: rotate(180deg);
 }
 
 .stick {
@@ -279,7 +295,7 @@ h1 {
 .article-container__main-info {
     margin: 13px 25px;
     overflow: hidden;
-    max-height: 145px;
+    height: 145px;
 }
 
 button {
@@ -313,8 +329,83 @@ button:hover {
 
 .fake-header {
     display: none;
+    min-width: 320px;
 }
 
+.slider-header {
+    padding: 16px;
+    border-top: 1px solid #D9FFF5;
+    background-image: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.slider-header__text {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7E82;
+    margin: 0;
+}
+
+.swiper {
+    margin-top: 24px
+}
+
+.swiper-slide  {
+    width: 240px;
+    height: 110px;
+    margin-left: 16px;
+}
+
+.swiper-slide__content {
+    display: flex;
+    width: auto;
+    height: 40px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+}
+
+.go-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    background-image: url(pics/go.svg);
+    transition: transform 300ms;
+}
+
+.go-button:hover {
+    transform: scale(1.15);
+}
+
+.slider-static {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    column-gap: 30px;
+    margin: 16px;
+    height: 170px;
+    overflow: hidden;
+}
+
+.article--bigboy {
+    height: auto;
+}
+
+.slider-static__item {
+    width: 190px;
+    height: 40px;
+}
+
+.all-brands {
+    display: none;
+}
 
 @media (min-width: 768px) {
 
@@ -353,7 +444,11 @@ button:hover {
 
     .article-container__main-info {
         max-width: 90%;
-        max-height: 190px;
+        height: 190px;
+    }
+
+    .article--bigboy {
+        height: auto;
     }
 
     .list {
@@ -364,7 +459,13 @@ button:hover {
         margin-left: 24px;
     }
 
+    .all-brands {
+        display: block;
+    }
 
+    .swiper {
+        display: none;
+    }
 }
 
 
@@ -413,6 +514,14 @@ button:hover {
     .list::before,
     .list::after {
         display: none;
+    }
+
+    .slider-static__item {
+        width: 206px;
+    }
+
+    .slider-static {
+        margin-left: 32px;
     }
 
 }

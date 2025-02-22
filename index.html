@@ -8,15 +8,15 @@
 </head>
 <body>
     <header class="header-container">
-            <button class="header-container__menu-icon header-container__icon"></button>
-            <div class="header-container__divider divider-first header-container__icon"></div>
+            <button class="header-container__menu-icon header-container__icon icon"></button>
+            <div class="header-container__divider divider-first header-container__icon icon"></div>
             <a class="header-container__icon header-container__logo"></a>
-            <button class="header-container__icon header-container__call-icon"></button>
-            <button class="header-container__icon header-container__chat-icon"></button>
-            <button class="header-container__icon header-container__profile-icon"></button>
+            <button class="header-container__icon header-container__call-icon icon"></button>
+            <button class="header-container__icon header-container__chat-icon icon"></button>
+            <button class="header-container__icon header-container__profile-icon icon"></button>
             <div class="header-container__divider header-container__icon"></div>
-            <button class="header-container__icon header-container__settings-icon"></button>
-            <button class="header-container__icon header-container__search-icon"></button>
+            <button class="header-container__icon header-container__settings-icon icon"></button>
+            <button class="header-container__icon header-container__search-icon icon"></button>
     </header>
     <main>
         <div class="stick"></div>
@@ -46,17 +46,18 @@
 
         <div class="article-container">
             <div class="article-container__readmore">
-                <article class="article-container__main-info">
+                <article class="article-container__main-info article">
                     <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
                     <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                 </article>
-                <button class="article-container__button">
-                    <img src="pics/readmore.svg" class="article-container__readmore-img" ></img>
-                    <div class="readmore">Читать далее</div>
+                <button class="article-container__button readmore-button">
+                    <img src="pics/readmore.svg" class="readmore-img"></img>
+                    <div class="readmore"></div>
                 </button>
             </div>
             <img src="pics/kartinka.png" class="article-container__kartinka" alt="Логотип">
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
