@@ -1,120 +1,121 @@
 .prices__slide {
-    width: 260px;
-    height: 250px;
-    margin-left: 16px;
-    font-size: 14px;
-    line-height: 16px;
+  width: 260px;
+  height: 250px;
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 16px;
 
-    .order-button {
-        width: 119px;
-        height: 32px;
-        background-color: $button-color;
-        border-radius: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        float: right;
-        transition: transform 300ms;
-        cursor: pointer;
+  .order-button {
+    width: 119px;
+    height: 32px;
+    background-color: $button-color;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: right;
+    transition: transform 300ms;
+    cursor: pointer;
 
-        &__text {
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 700;
-            color: white;
-        }
-
-        &__icon {
-            width: 7px;
-            height: 10px;
-            border-radius: 50%;
-            background-image: url(../img/dropdown.svg);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-        }
+    &__text {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
     }
 
-    .swiper-slide__content:hover .order-button {
-        transform: scale(1.15);
+    &__icon {
+      width: 7px;
+      height: 10px;
+      border-radius: 50%;
+      background-image: url(../img/dropdown.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
     }
+  }
 
-    .name {
-        color: $grey-text-color;
-        display: block;
-        margin-bottom: 6px;
-    }
+  .swiper-slide__content:hover .order-button {
+    transform: scale(1.15);
+  }
 
-    .time {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .name {
+    color: $grey-text-color;
+    display: block;
+    margin-bottom: 6px;
+  }
 
-    .swiper-slide__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: auto;
-        height: 166px;
-        border: 1px solid #EAEAEA;
-        border-radius: 6px;
-        background-color: white;
-        padding: 16px;
-        cursor: pointer;
-    }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .swiper-slide__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 166px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: white;
+    padding: 16px;
+    cursor: pointer;
+  }
 }
 
 .prices-heading {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .prices-heading{
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin-left: 52px;
-        margin-bottom: 16px;
-        width: 90%;
-        color: $grey-text-color;
+  .prices-heading {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-left: 52px;
+    margin-bottom: 16px;
+    width: 90%;
+    color: $grey-text-color;
+  }
+
+  .prices {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 8px;
+  }
+
+  .prices__slide {
+    width: 97%;
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #eaeaea;
+
+    &:last-child {
+      border: none;
     }
 
-    .prices {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        margin-left: 24px;
-        margin-right: 24px;
-        border-radius: 8px;
+    .swiper-slide__content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      width: 100%;
+      border: none;
+
+      border-radius: 0;
+      height: 20px;
+      align-items: center;
+
+      .prices__info {
+        margin-right: 8px;
+      }
     }
 
-    
-
-    .prices__slide {
-        width: 97%;
-        height: 60px;
-        display: flex;
-        align-items: flex-start;
-        border-bottom: 1px solid #EAEAEA;
-        
-
-        .swiper-slide__content {
-            display:grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            width: 100%;
-            border: none;
-
-            border-radius: 0;
-            height: 20px;
-            align-items: center;
-
-            .prices__info {
-                margin-right: 8px;
-            }
-        }
-
-        .name {
-            display: none;
-        }
+    .name {
+      display: none;
     }
+  }
 }
