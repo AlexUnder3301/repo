@@ -1,0 +1,51 @@
+@import './block-header.scss';
+@import './brands-repair.scss';
+@import './devices-repair.scss';
+@import './prices.scss';
+
+.swiper {
+    margin-top: 24px;
+
+    &::before {
+        position: absolute;
+        width: 20px;
+        height: 160px;
+        content: "";
+        background-image: linear-gradient(to right,  #F8F8F8, transparent);
+        z-index: 100;
+    }
+
+    &::after {
+        position: absolute;
+        right: 0;
+        top: 0; 
+        width: 20px;
+        height: 110px;
+        content: "";
+        background-image: linear-gradient(to left,  #F8F8F8, transparent);
+        z-index: 100;
+    }
+
+}
+
+.swiper-pagination-bullet {
+    background-color: $pagination-chosen-color;
+}
+
+.slider-button {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .slider-button {
+        display: flex;
+    }
+
+    .swiper-pagination-bullet {
+        display: none;
+    }
+    
+
+}

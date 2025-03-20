@@ -1,0 +1,53 @@
+
+.article-container {
+    &__main-info {
+        margin: 13px 25px;
+        overflow: hidden;
+        height: 145px;
+    }
+
+    &__kartinka {
+        margin-top: 16px;
+        width: 100vw;
+    }
+}
+
+.article--bigboy {
+    height: auto;
+}
+
+
+@media (min-width: 768px) {
+
+    .article-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &__kartinka {
+            border-radius: 6px; 
+            width: 90%;
+        }
+
+        &__main-info {
+            max-width: 90%;
+            height: 190px;
+        }
+        
+        &__main-info {
+            max-width: 90%;
+            height: 190px;
+        }
+    }
+
+    .article--bigboy {
+        height: auto;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .article-container__kartinka {
+        width: 90%;
+    }
+
+}

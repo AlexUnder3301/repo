@@ -1,0 +1,21 @@
+@import './fonts.scss';
+@import './variables.scss';
+body {
+    margin: 0;
+    background-color: $background-color-light-grey;
+    font-family: 'TT Lakes';
+    width: 100vw;
+}
+
+button {
+    font-family: "TT Lakes";
+    font-weight: 500;
+    border: none;
+    background-color: $background-color-light-grey;
+    font-size: 16px;
+    color: black;
+}
+
+button:hover {
+    color: $grey-text-color;
+}

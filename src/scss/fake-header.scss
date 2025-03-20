@@ -1,0 +1,33 @@
+.fake-header {
+    display: none;
+    min-width: 320px;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        background-color: $background-color-light-grey;
+        transition: transform 300ms;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    .fake-header {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+        margin-top: 32px;
+
+        &__button {
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            gap: 10px;
+            cursor: pointer; 
+            
+            &:hover .fake-header__icon{
+                transform: scale(1.15);
+            }
+        }
+    }
+}

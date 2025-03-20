@@ -1,17 +1,29 @@
-$bgColor: #24292e;
-$text: #fff;
+@import './common.scss';
+@import './header-container.scss';
+@import './icon.scss';
+@import './fullscreen-header.scss';
+@import './fake-header.scss';
+@import './icon.scss';
+@import './list.scss';
+@import './menu.scss';
+@import './readmore.scss';
+@import './slider.scss';
+@import './article-container.scss';
+@import './modals.scss';
+@import './commercial-offer.scss';
+@import './footer.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
+@media (min-width: 1120px) {
+
+    .menu {
+        position: inherit;
+        transform: translate(0);
+        box-shadow: none;
+    }
+
+    .main-wrapper {
+        display: flex;
+    }
+
 }

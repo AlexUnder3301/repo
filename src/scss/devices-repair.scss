@@ -1,0 +1,48 @@
+.devices-repair__slide {
+    width: 224px;
+    height: 200px;
+    margin-left: 16px;
+
+    .swiper-slide__content {
+        display: flex;
+        width: auto;
+        height: 126px;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        background-color: white;
+        padding: 16px;
+        cursor: pointer;
+        justify-content: space-between;
+
+        .go-button {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            background-image: url(../img/go.svg);
+            transition: transform 300ms;
+            cursor: pointer;
+            align-self: end;
+        }
+    }
+
+    .swiper-slide__content:hover .go-button {
+        transform: scale(1.15);
+    }
+}
+
+@media (min-width: 768px) {
+    .devices-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 8px;
+        height: 170px;
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+
+    .devices-repair__slide {
+        height: 160px;
+        width: 240px;
+    }
+}

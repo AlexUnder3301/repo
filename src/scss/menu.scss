@@ -1,0 +1,160 @@
+.menu {
+    max-width: 320px;
+    min-height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 40px 0 rgba(68, 68, 68, 0.4);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transform: translate(-320px);
+    transition: transform 300ms;
+    z-index: 200;
+
+    &--active {
+        transform: translate(0);
+        box-shadow: 0 0 0 1920px rgba(255, 255, 255, 0.9);
+        z-index: 100;
+    }
+}
+
+.menu-header {
+    min-height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &__close-icon {
+        background-image: url(../img/close.svg)
+    }
+
+    &__search-icon {
+        background-image: url(../img/search.svg);
+    }
+
+    &__logo {
+        height: 52px;
+        width: 98px;
+        background-color: white;
+    }
+
+
+    &__search-icon {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    &__close-icon {
+        margin-left: 20px;
+        transform: rotate(0deg);
+        transition: transform;
+        transition-duration: 300ms;
+
+        &:hover {
+            transform: rotate(-180deg) scale(1.15);
+        }
+    }
+    
+}
+
+.menu-body {
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        margin: 25px;
+    }
+
+    &__item:focus button{
+        color: $grey-text-color;
+    }
+
+    &__item::before {
+        content: "";
+        height: 32px;
+        border-right: 4px solid #41F6D7;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        position: absolute;
+        left: 0;
+        transform: scale(0);
+        transition: transform 300ms
+    }
+
+    &__item:hover::before {
+        transform: scale(1);
+    }
+
+    &__button {
+        background-color: white;
+    }
+    
+
+}
+
+.menu-footer {
+    margin-top: auto;
+
+    &__icons {
+        display: flex;
+        margin: 20px;
+        gap: 15px;
+    }
+
+    &__mail {
+        display: block;
+        margin: 20px;
+        font-size: 0.8em;
+    }
+
+    
+    &__phone {
+        font-family: "TT Lakes";
+        display: block;
+        margin: 20px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    &__languages {
+        display: flex;
+        margin: 20px;
+    }
+
+    &__button {
+        text-transform: uppercase;
+        background-color: white
+    }
+
+    &__button:first-child {
+        color: $grey-text-color;
+    }
+}
+
+
+@media (min-width: 1120px) {
+    .menu {
+        min-width: 320px;
+    }
+
+    .menu-header {
+        margin-top: 16px;
+
+        &__close-icon {
+            display: none;
+        }
+
+        &__logo {
+            margin-left: 16px;
+        }
+    }
+
+    .menu-footer {
+        margin-top: 230px
+    }
+}

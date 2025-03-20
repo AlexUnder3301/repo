@@ -1,0 +1,107 @@
+.header-container__menu-icon,
+.menu-icon {
+    background-image: url(../img/menu-icon.svg);
+}
+
+.header-container__menu-icon,
+.menu-icon {
+    background-image: url(../img/menu-icon.svg);
+}
+
+.header-container__logo,
+.logo {
+    background-image: url(../img/logo.svg);
+}
+
+.header-container__call-icon,
+.call-icon {
+    background-image: url(../img/call.svg)
+}
+    
+.header-container__chat-icon,
+.chat-icon {
+    background-image: url(../img/chat.svg)
+}
+
+.header-container__profile-icon,
+.profile-icon {
+    background-image: url(../img/profile.svg)
+}
+
+.header-container__settings-icon,
+.settings-icon {
+    background-image: url(../img/settings-icon.svg)
+}
+
+.header-container__search-icon,
+.search-icon {
+    background-image: url(../img/search-icon.svg)
+}
+
+
+.header-container {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d9fff5;
+    justify-content: space-around;
+    background-color: white;
+    width: 100vw;
+
+    &__icon {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+    }
+
+    &__logo {
+        height: 52px;
+        width: 98px;
+    }
+
+    &__divider {
+        height: 32px;
+        border: solid 1px #EAEAEA;
+        width: 0;
+        border-radius: 1px;
+    }
+}
+
+.divider-first,
+.header-container__call-icon, 
+.header-container__chat-icon,
+.header-container__profile-icon {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .divider-first,
+    .header-container__call-icon, 
+    .header-container__chat-icon,
+    .header-container__profile-icon {
+        display: block;
+    }
+
+    .header-container {
+        justify-content: start;
+
+        &__icon {
+            margin-right: 20px;
+        }
+
+        &__logo {
+            margin-right: auto;
+        }
+
+        &__menu-icon {
+            margin-left: 20px;
+        }
+    }
+
+}
+
+@media (min-width: 1120px) {
+    .header-container {
+        display: none;
+    }
+}

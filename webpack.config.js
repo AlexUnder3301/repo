@@ -32,6 +32,11 @@ module.exports = {
         }
       },
 
+      // {
+      //   test: /\.pug$/, // Обрабатываем файлы с расширением .pug
+      //   use: ['pug-loader'],
+      // },
+
       // Компилируем SCSS в CSS
       {
         test: /\.scss$/,
@@ -67,13 +72,12 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
       template: './src/index.html',
       inject: true,
       minify: {
         removeComments: true,
         collapseWhitespace: false,
-      }
+      },
     }),
 
     // Кладем стили в отдельный файлик
